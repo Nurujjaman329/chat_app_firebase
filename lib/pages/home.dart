@@ -15,43 +15,47 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Color(0XFF553370),
       body: Container(
-        margin: EdgeInsets.symmetric(
-          vertical: 50.0,
-          horizontal: 20.0,
-        ),
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'ChatApp',
-                  style: TextStyle(
-                    color: Color(0XFFc199cd),
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(
-                    5.0,
-                  ),
-                  decoration: BoxDecoration(
-                    color: Color(0XFF3a2144),
-                    borderRadius: BorderRadius.circular(
-                      10.0,
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 20.0, right: 20.0, top: 40.0, bottom: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'ChatApp',
+                    style: TextStyle(
+                      color: Color(0XFFc199cd),
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  child: Icon(
-                    Icons.search,
-                    color: Color(0XFFc199cd),
+                  Container(
+                    padding: EdgeInsets.all(
+                      5.0,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Color(0XFF3a2144),
+                      borderRadius: BorderRadius.circular(
+                        10.0,
+                      ),
+                    ),
+                    child: Icon(
+                      Icons.search,
+                      color: Color(0XFFc199cd),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             Container(
+              padding: EdgeInsets.symmetric(
+                vertical: 30.0,
+                horizontal: 20.0,
+              ),
               width: w,
-              height: h / 3,
+              height: h / 1.165,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -61,7 +65,113 @@ class _HomePageState extends State<HomePage> {
                   topRight: Radius.circular(20.0),
                 ),
               ),
-              child: Text(''),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(
+                          60.0,
+                        ),
+                        child: Image.asset(
+                          'images/me.jpg',
+                          height: 70,
+                          width: 70,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Nurujjaman',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text(
+                            'Hello , what are you doing ?',
+                            style: TextStyle(
+                              color: Colors.black38,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Text(
+                          '4.30 AM',
+                          style: TextStyle(
+                            color: Colors.black38,
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  Row(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(
+                          60.0,
+                        ),
+                        child: Image.asset(
+                          'images/me.jpg',
+                          height: 70,
+                          width: 70,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Nurujjaman',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text(
+                            'Hello , what are you doing ?',
+                            style: TextStyle(
+                              color: Colors.black38,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Text(
+                          '4.30 AM',
+                          style: TextStyle(
+                            color: Colors.black38,
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ],
         ),
