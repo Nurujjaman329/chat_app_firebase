@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/home.dart';
+import 'pages/chatpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Chat App',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: ChatPage(),
     );
   }
 }

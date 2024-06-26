@@ -68,6 +68,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ClipRRect(
                         borderRadius: BorderRadius.circular(
@@ -140,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Nurujjaman',
+                            'Nurujjaman-test',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 18.0,
@@ -148,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           Text(
-                            'Hello , what are you doing ?',
+                            "Hello , what's up ?",
                             style: TextStyle(
                               color: Colors.black38,
                               fontSize: 16.0,
